@@ -44,7 +44,7 @@ app.get("/files", (req, res) => {
 const apiv1 = "/api/v1";
 
 app.use(`${apiv1}/login`, require("./routes/login")); 
-app.use(`${apiv1}/create_dns`, require("./routes/create_dns"));
+app.use(`${apiv1}/create-dns`, require("./routes/create_dns"));
 
 //Static files
 app.use(express.static("public"));
