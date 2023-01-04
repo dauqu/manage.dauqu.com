@@ -38,7 +38,8 @@ app.get("/", (req, res) => {
 
 app.post("/test", (req, res) => {
   console.log(req.body);
-
+  //Log headers
+  console.log(req.headers);
   res.send("Done");
 });
 
